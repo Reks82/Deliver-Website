@@ -1,14 +1,19 @@
+$header-menu-height: 50px;
+$main-menu-height-desktop: 120px;
+$search-height: 50px;
+$search-width: 150px;
+
 // header-menu
 //--------------------------------------------------------------
 
 .header-menu {
     background-color: $primary-color;
-    height: 50px;
+    height: $header-menu-height;
     font-size: 14px;
     color: $text-white;
 
     .wrapper {
-        height: 50px;
+        height: $header-menu-height;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -30,5 +35,111 @@
 
     .hover:hover{
         color: $secondary-color;
+    }
+}
+
+// Main menu
+//-----------------------------------------------------------------------
+.main-menu {
+    background-color: $secondary-color;
+
+    .wrapper {
+        height: $main-menu-height-desktop;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo, .search {
+            min-width: $search-width + $search-height;
+        }
+
+        nav {   
+            height: 100%;
+            line-height: $main-menu-height-desktop;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                color: $primary-color;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+    
+                li {
+                    box-sizing: border-box;
+                    height: 100%;
+                    padding: 0 12px;
+                    margin: 0 12px;
+
+                    &.selected {
+                        border-bottom: 4px solid $primary-color;
+                        font-weight: 900;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .search {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            box-sizing: border-box;
+
+            .container {
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $primary-color;
+                height: $search-height;
+                border-radius: $search-height;
+                box-shadow: 0 10px 18px $primary-color-transparent;
+
+                &:hover {
+                    input {
+                        width: $search-width;
+                        padding: 0 10px;
+                    }
+
+                    button {
+                        background-color: $secondary-color;
+                        color: $primary-color;
+                    }
+                }
+    
+                input {
+                    border: none;
+                    background: none;
+                    outline: none;
+                    padding: 0;
+                    font-size: 14px;
+                    color: $text-white;
+                    width: 0px;
+                    transition: .4s;
+                }
+    
+                button {
+                    background-color: $primary-color;
+                    width: $search-height;
+                    height: $search-height;
+                    border-radius: 50%;
+                    border: 5px solid $primary-color;
+                    color: $text-white;
+                    padding: 5px;
+                    cursor: pointer;
+                    transition: .4s;
+                }
+            }
+        }
     }
 }

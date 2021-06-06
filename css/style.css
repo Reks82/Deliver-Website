@@ -1,7 +1,7 @@
 html {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.34px;
   width: 100vw;
 }
 
@@ -65,6 +65,95 @@ body::before {
 }
 .header-menu .hover:hover {
   color: #ffcc00;
+}
+
+.main-menu {
+  background-color: #ffcc00;
+}
+.main-menu .wrapper {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-menu .wrapper .logo, .main-menu .wrapper .search {
+  min-width: 200px;
+}
+.main-menu .wrapper nav {
+  height: 100%;
+  line-height: 120px;
+}
+.main-menu .wrapper nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #ba0000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.main-menu .wrapper nav ul li {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 12px;
+  margin: 0 12px;
+}
+.main-menu .wrapper nav ul li.selected {
+  border-bottom: 4px solid #ba0000;
+  font-weight: 900;
+}
+.main-menu .wrapper nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-menu .wrapper .search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+.main-menu .wrapper .search .container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ba0000;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0 10px 18px rgba(186, 0, 0, 0.5);
+}
+.main-menu .wrapper .search .container:hover input {
+  width: 150px;
+  padding: 0 10px;
+}
+.main-menu .wrapper .search .container:hover button {
+  background-color: #ffcc00;
+  color: #ba0000;
+}
+.main-menu .wrapper .search .container input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  font-size: 14px;
+  color: #fff;
+  width: 0px;
+  transition: 0.4s;
+}
+.main-menu .wrapper .search .container button {
+  background-color: #ba0000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #ba0000;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 /*# sourceMappingURL=style.css.map */
