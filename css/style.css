@@ -226,12 +226,12 @@ body::before {
   font-size: 70px;
   font-weight: 700;
   line-height: 1.15;
-  letter-spacing: 3px;
-  word-spacing: 7px;
+  letter-spacing: 3.1px;
+  word-spacing: 6px;
   color: #fff;
 }
 .header-info .wrapper hr {
-  width: 100px;
+  width: 96px;
   border: 2px solid #ffcc00;
   margin-top: 44px;
   margin-left: 0;
@@ -240,7 +240,7 @@ body::before {
 .header-info .wrapper p {
   font-size: 20px;
   line-height: 1.5;
-  letter-spacing: 0.55px;
+  letter-spacing: 0.51px;
   color: #ffcc00;
 }
 .header-info .wrapper ul {
@@ -250,6 +250,7 @@ body::before {
   font-size: 20px;
   font-weight: 700;
   word-spacing: 10px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #ffcc00;
   margin-top: 38px;
@@ -293,7 +294,7 @@ body::before {
   font-size: 50px;
   font-weight: 700;
   color: #ba0000;
-  letter-spacing: 2px;
+  letter-spacing: 2.15px;
   padding-top: 130px;
   padding-bottom: 108px;
 }

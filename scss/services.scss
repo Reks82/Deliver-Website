@@ -6,7 +6,7 @@
             font-size: 50px;
             font-weight: 700;
             color: $text-red;
-            letter-spacing: 2px;
+            letter-spacing: 2.15px;
             padding-top: 130px;
             padding-bottom: 108px;
         }
@@ -137,7 +137,7 @@
                         height: $button-height;
                         margin-top: 20px;
                         border: 2px solid white;
-                        border-radius: $button-height / 2;
+                        border-radius: $button-height * 0.5;
                         background: none;
                         font-size: 12px;
                         font-weight: 900;
