@@ -53,16 +53,16 @@
                     line-height: 1.6;
                 }
 
-                button {
+                a {
+                    display: block;
                     margin-top: 16px;
-                    background: none;
-                    border: none;
                     cursor: pointer;
                     padding: 0 0;
                     font-size: 16px;
                     font-weight: 700;
                     letter-spacing: 1px;
                     color: $text-black;
+                    text-decoration: none;
                     transition: $transition-duration;
 
                     &:hover {
@@ -73,85 +73,95 @@
                         color: $primary-color;
                     }
                 }
+            }
 
-                &.red {
-                    box-sizing: border-box;
-                    height: 339px;
-                    background-color: $primary-color;
-                    padding: 29px;
+            .form-location {
+                box-sizing: border-box;
+                width: 270px;
+                height: 339px;
+                background-color: $primary-color;
+                padding: 29px;
 
-                    h3 {
-                        padding-top: 0;
-                        padding-bottom: 18px;
-                        text-transform: none;
-                        color: $text-white;
-                    }
+                h3 {
+                    padding-top: 0;
+                    padding-bottom: 18px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: none;
+                    letter-spacing: 1px;
+                    color: $text-white;
+                }
 
-                    hr {
-                        width: 70px;
-                        border: 1px solid $secondary-color;
-                        margin-left: 0;
-                    }
+                hr {
+                    width: 70px;
+                    border: 1px solid $secondary-color;
+                    margin-left: 0;
+                }
 
-                    p {
-                        color: $text-white;
-                        margin-top: 26px;
-                    }
+                p {
+                    font-size: 16px;
+                    line-height: 1.6;
+                    color: $text-white;
+                    margin-top: 26px;
+                }
 
-                    .input-location {
-                        margin-top: 35px;
-                        display: flex;
+                .input-location {
+                    margin-top: 35px;
+                    display: flex;
 
-                        input {
-                            box-sizing: border-box;
-                            width: 160px;
-                            height: $button-height;
-                            background-color: $dark-red-color;
-                            border: none;
-                            outline: none;
-                            margin: 0;
-                            padding-left: 20px;
-                            color: $text-white;
-                            font-size: 16px;
-                            
-                            &::placeholder {
-                                color: $text-white;
-                            }
-                        }
-
-                        button {
-                            width: $button-height;
-                            margin: 0;
-                            padding: 0;
-                            height: $button-height;
-                            background: $secondary-color;
-
-                            &:hover {
-                                box-shadow: 0 10px 18px $secondary-color-transparent;
-                            }
-                        } 
-                    }
-
-                    .button-explore {
-                        width: 150px;
+                    input {
+                        box-sizing: border-box;
+                        width: 160px;
                         height: $button-height;
-                        margin-top: 20px;
-                        border: 2px solid white;
-                        border-radius: $button-height * 0.5;
-                        background: none;
-                        font-size: 12px;
-                        font-weight: 900;
+                        background-color: $dark-red-color;
+                        border: none;
+                        outline: none;
+                        margin: 0;
+                        padding-left: 20px;
                         color: $text-white;
-                        text-align: center;
-                        text-transform: uppercase;
-                        transition: $transition-duration;
+                        font-size: 16px;
+                        
+                        &::placeholder {
+                            color: $text-white;
+                        }
+                    }
+
+                    button {
+                        width: $button-height;
+                        margin: 0;
+                        padding: 0;
+                        height: $button-height;
+                        background: $secondary-color;
+                        color: $text-red;
+                        font-size: 16px;
+                        font-weight: 700;
+                        border: none;
 
                         &:hover {
                             box-shadow: 0 10px 18px $secondary-color-transparent;
-                            background: $secondary-color;
-                            border-color: $secondary-color;
-                            color: $text-red;
                         }
+                    } 
+                }
+
+                .button-explore {
+                    width: 150px;
+                    height: $button-height;
+                    margin-top: 20px;
+                    border: 2px solid white;
+                    border-radius: $button-height * 0.5;
+                    background: none;
+                    font-size: 12px;
+                    font-weight: 900;
+                    color: $text-white;
+                    text-align: center;
+                    text-transform: uppercase;
+                    transition: $transition-duration;
+
+                    &:hover {
+                        box-shadow: 0 10px 18px $secondary-color-transparent;
+                        background: $secondary-color;
+                        border-color: $secondary-color;
+                        color: $text-red;
                     }
                 }
             }
