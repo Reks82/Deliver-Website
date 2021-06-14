@@ -1,6 +1,7 @@
 .services {
     .wrapper {
         position: relative;
+        height: 732px;
 
         h2 {
             font-size: 50px;
@@ -30,7 +31,6 @@
 
             .card {
                 width: 270px;
-                height: 350px;
 
                 img {
                     width: 100%;
@@ -156,6 +156,7 @@
                     text-align: center;
                     text-transform: uppercase;
                     transition: $transition-duration;
+                    cursor: pointer;
 
                     &:hover {
                         box-shadow: 0 10px 18px $secondary-color-transparent;

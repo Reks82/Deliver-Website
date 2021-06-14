@@ -69,7 +69,6 @@ body {
   overflow-x: hidden;
 }
 body::before {
-  display: none;
   content: "";
   top: 0;
   bottom: 0;
@@ -236,7 +235,7 @@ body::before {
   border: 2px solid #ffcc00;
   margin-top: 44px;
   margin-left: 0;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 .header-info .wrapper p {
   font-size: 20px;
@@ -255,7 +254,7 @@ body::before {
   text-transform: uppercase;
   color: #ffcc00;
   margin-top: 38px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 .header-info .wrapper ul li {
   margin-right: 15px;
@@ -290,6 +289,7 @@ body::before {
 
 .services .wrapper {
   position: relative;
+  height: 732px;
 }
 .services .wrapper h2 {
   font-size: 50px;
@@ -317,7 +317,6 @@ body::before {
 }
 .services .wrapper .container .card {
   width: 270px;
-  height: 350px;
 }
 .services .wrapper .container .card img {
   width: 100%;
@@ -428,12 +427,83 @@ body::before {
   text-align: center;
   text-transform: uppercase;
   transition: 0.3s;
+  cursor: pointer;
 }
 .services .wrapper .container .form-location .button-explore:hover {
   box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
   background: #ffcc00;
   border-color: #ffcc00;
   color: #ba0000;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .background-image {
+  position: absolute;
+  z-index: -1;
+  width: 1920px;
+  height: 700px;
+  top: 0;
+  background: linear-gradient(0deg, rgba(255, 204, 0, 0.4), transparent), linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/dhl-transport-vehicles.png");
+  background-repeat: no-repeat;
+}
+.about h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  word-spacing: 1px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  padding-top: 147px;
+  padding-bottom: 55px;
+}
+.about .slider-play-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #ffcc00;
+  border: none;
+  color: #ba0000;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.about .slider-play-button:hover {
+  box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
+}
+.about .about-slider {
+  margin-top: 177px;
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about .about-slider .slider-item .text-area {
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
+  padding: 27px 30px;
+}
+.about .about-slider .slider-item .text-area h3 {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ba0000;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+.about .about-slider .slider-item .text-area ul {
+  list-style-type: none;
+}
+.about .about-slider .slider-item .text-area ul li {
+  margin-top: 11px;
+  padding-left: 20px;
+  background-image: url("../img/arrow-right.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
