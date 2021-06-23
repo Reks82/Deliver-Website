@@ -1,0 +1,53 @@
+.features {
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 98px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        article {
+            width: 770px;
+
+            h2 {
+                margin-bottom: 34px;
+                font-size: 30px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 24px;
+                letter-spacing: 1.5px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.5;
+                letter-spacing: 0.55px;
+            }
+        }
+
+        .learn-more-button {
+            height: $button-height;
+            background-color: $dark-red-color;
+            border: none;
+            border-radius: $button-height * 0.5;
+            padding: 0 30px;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: $text-white;
+            line-height: $button-height;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: $transition-duration;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: $text-red;
+                box-shadow: 0 10px 18px $secondary-color-transparent;
+            }
+        }
+    }
+}
