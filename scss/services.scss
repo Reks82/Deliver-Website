@@ -107,40 +107,20 @@
 
                 .input-location {
                     margin-top: 35px;
-                    display: flex;
 
-                    input {
-                        box-sizing: border-box;
-                        width: 160px;
+                    select {
+                        width: 210px;
                         height: $button-height;
+                        padding: 0 18px;
                         background-color: $dark-red-color;
                         border: none;
-                        outline: none;
-                        margin: 0;
-                        padding-left: 20px;
+                        line-height: $button-height;
+                        font-size: 16px;
+                        font-weight: 600;
                         color: $text-white;
-                        font-size: 16px;
-                        
-                        &::placeholder {
-                            color: $text-white;
-                        }
+                        text-transform: capitalize;
+                        appearance: none;
                     }
-
-                    button {
-                        width: $button-height;
-                        margin: 0;
-                        padding: 0;
-                        height: $button-height;
-                        background: $secondary-color;
-                        color: $text-red;
-                        font-size: 16px;
-                        font-weight: 700;
-                        border: none;
-
-                        &:hover {
-                            box-shadow: 0 10px 18px $secondary-color-transparent;
-                        }
-                    } 
                 }
 
                 .button-explore {
