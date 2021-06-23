@@ -9,6 +9,8 @@ $secondary-color-transparent: rgba(255, 204, 0, .4);
 $dark-red-color: #9d0000;
 $back-overlay-color: rgba(0, 0, 0, .7);
 $black-shadow-transparent: rgba(0, 0, 0, .4);
+$dark-white-background-color: #f9f9f9;
+$light-pink-color: #eedbdb;
 
 // text colors
 $text-white: #fff;
@@ -43,7 +45,7 @@ body {
 
     // Temporary block for add transparent background image of whole page, to check right positions and values of elements
     &::before {
-        // display: none;
+        display: none;
         content: "";
         top: 0;
         bottom: 0;
