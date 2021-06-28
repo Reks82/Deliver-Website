@@ -744,4 +744,66 @@ body::before {
   width: 88%;
 }
 
+footer {
+  height: 311px;
+  box-sizing: border-box;
+  padding-top: 58px;
+  background: url("../img/footer-background-left.png"), url("../img/footer-background-right.png"), linear-gradient(90deg, #ba0000, #ba0000 10%, transparent 10%, transparent 90%, #ffcc00 90%, #ffcc00);
+  background-repeat: no-repeat;
+  background-position: top 0px left 40px, top 0px right 40px, top left;
+}
+footer .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer .wrapper section {
+  width: 270px;
+}
+footer .wrapper section h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  color: #ba0000;
+}
+footer .wrapper section ul {
+  margin-top: 35px;
+}
+footer .wrapper section ul li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+}
+footer .wrapper section ul li a {
+  color: #777777;
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer .wrapper section ul li a:visited {
+  color: #777777;
+}
+footer .wrapper .contact-center {
+  margin-left: 100px;
+}
+footer .wrapper .contact-center a:hover {
+  color: #ffcc00;
+}
+footer .wrapper .about-us {
+  margin-left: 130px;
+}
+footer .wrapper .about-us a:hover {
+  color: #ffcc00;
+}
+footer .wrapper .social-media {
+  margin-left: 30px;
+}
+footer .wrapper .social-media a:hover {
+  color: #017edf;
+}
+
 /*# sourceMappingURL=style.css.map */

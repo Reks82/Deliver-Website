@@ -1,0 +1,78 @@
+footer {
+    height: 311px;
+    box-sizing: border-box;
+    padding-top: 58px;
+    background: url("../img/footer-background-left.png"),
+        url("../img/footer-background-right.png"),
+        linear-gradient(90deg, $primary-color, $primary-color 10%, transparent 10%, transparent 90%, $secondary-color 90%, $secondary-color);
+    background-repeat: no-repeat;
+    background-position: top 0px left 40px,
+        top 0px right 40px,
+        top left;
+
+    .wrapper {
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-start;
+
+        section {
+            width: 270px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                word-spacing: 5px;
+                color: $text-red;
+            }
+
+            ul {
+                margin-top: 35px;
+
+                li {
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.6px;
+                    word-spacing: 1px;
+
+                    a {
+                        color: $text-grey;
+                        text-decoration: none;
+                        transition: $transition-duration;
+
+                        &:visited {
+                            color: $text-grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-center {
+            margin-left: 100px;
+
+            a:hover {
+                color: $text-yellow;
+            }
+        }
+
+        .about-us {
+            margin-left: 130px;
+
+            a:hover {
+                color: $text-yellow;
+            }
+        }
+
+        .social-media {
+            margin-left: 30px;
+
+            a:hover {
+                color: $text-blue;
+            }
+        }
+    }
+}
