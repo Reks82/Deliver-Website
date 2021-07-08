@@ -67,14 +67,6 @@ body {
     margin: 0 auto;
 }
 
-.hover {
-    transition: all .3s ease 0s;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
 .unselectable {
     -moz-user-select: none;
     -webkit-user-select: none;

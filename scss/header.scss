@@ -18,6 +18,62 @@ $search-width: 150px;
         justify-content: space-between;
         align-items: center;
 
+        .choose-language {
+            position: relative;
+
+            .choose-language-button {
+                background: none;
+                border: none;
+                font-size: 14px;
+                font-weight: 300;
+                color: $text-white;
+                padding: 0;
+                cursor: pointer;
+            }   
+            
+            .language-list {
+                position: absolute;
+                box-sizing: border-box;
+                width: 55px;
+                height: 0;
+                overflow: hidden;
+                transition: height ease $transition-duration;
+
+                li {
+                    a {
+                        display: block;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        color: $text-white;
+
+                        &:visited {
+                            color: $text-white;
+                        }
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+
+            &:hover {
+                .choose-language-button {
+                    color: $text-yellow;
+                }
+
+                .language-list {
+                    height: 45px;
+                    border: 1px solid white;
+                    background-color: $primary-color;
+                }
+            }
+        }
+
         .header-contacts {
             display: flex;
             justify-content: space-around;
@@ -25,16 +81,24 @@ $search-width: 150px;
 
             .contact-center {
                 margin-right: 30px;
+                transition: $transition-duration;
 
                 i {
                     margin-right: 3px;
                 }
+
+                &:hover {
+                    color: $text-yellow;
+                    cursor: pointer;
+                }
+            }
+
+            .country-profile:hover {
+                color: $text-yellow;
+                cursor: pointer;
+                transition: $transition-duration;
             }
         }
-    }
-
-    .hover:hover{
-        color: $text-yellow;
     }
 }
 
