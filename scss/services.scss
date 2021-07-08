@@ -123,6 +123,10 @@
                         text-transform: capitalize;
                         appearance: none;
                         cursor: pointer;
+
+                        &:focus {
+                            background-color: $dark-red-color;
+                        }
                     }
 
                     option {

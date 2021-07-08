@@ -38,9 +38,12 @@
                     }
 
                     input {
+                        -moz-appearance: none;
                         -webkit-appearance: none;
                         appearance: none;
                         margin: 0;
+                        width: 0;
+                        overflow: hidden;
 
                         &:checked + label {
                             background-color: $secondary-color;
@@ -157,7 +160,7 @@
             width: 470px;
             height: 534px;
             display: flex;
-            justify-content: right;
+            justify-content: flex-end;
             align-items: flex-end;
 
             &::before {
