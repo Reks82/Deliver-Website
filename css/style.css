@@ -117,13 +117,14 @@ body::before {
   font-size: 14px;
   font-weight: 300;
   color: #fff;
+  letter-spacing: 1px;
   padding: 0;
   cursor: pointer;
 }
 .header-menu .wrapper .choose-language .language-list {
   position: absolute;
   box-sizing: border-box;
-  width: 55px;
+  width: 60px;
   height: 0;
   overflow: hidden;
   transition: height ease 0.3s;
@@ -133,6 +134,7 @@ body::before {
   text-transform: capitalize;
   text-decoration: none;
   color: #fff;
+  padding: 0 4px;
 }
 .header-menu .wrapper .choose-language .language-list li a:visited {
   color: #fff;
@@ -167,10 +169,35 @@ body::before {
   color: #ffcc00;
   cursor: pointer;
 }
-.header-menu .wrapper .header-contacts .country-profile:hover {
+.header-menu .wrapper .header-contacts .country-profile {
+  position: relative;
+}
+.header-menu .wrapper .header-contacts .country-profile:hover span, .header-menu .wrapper .header-contacts .country-profile:hover i {
   color: #ffcc00;
   cursor: pointer;
   transition: 0.3s;
+}
+.header-menu .wrapper .header-contacts .country-profile .country-profile-list {
+  position: absolute;
+  box-sizing: border-box;
+  width: 120px;
+  border: none;
+  background-color: #ba0000;
+  height: 0;
+  transition: height ease 0.3s;
+  overflow: hidden;
+}
+.header-menu .wrapper .header-contacts .country-profile .country-profile-list li {
+  padding: 0 4px;
+  cursor: pointer;
+}
+.header-menu .wrapper .header-contacts .country-profile .country-profile-list li:hover {
+  background-color: #ffcc00;
+  color: #ba0000;
+}
+.header-menu .wrapper .header-contacts .country-profile:hover .country-profile-list {
+  height: 45px;
+  border: 1px solid white;
 }
 
 .main-menu {

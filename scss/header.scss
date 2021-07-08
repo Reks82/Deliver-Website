@@ -27,6 +27,7 @@ $search-width: 150px;
                 font-size: 14px;
                 font-weight: 300;
                 color: $text-white;
+                letter-spacing: 1px;
                 padding: 0;
                 cursor: pointer;
             }   
@@ -34,7 +35,7 @@ $search-width: 150px;
             .language-list {
                 position: absolute;
                 box-sizing: border-box;
-                width: 55px;
+                width:60px;
                 height: 0;
                 overflow: hidden;
                 transition: height ease $transition-duration;
@@ -45,6 +46,7 @@ $search-width: 150px;
                         text-transform: capitalize;
                         text-decoration: none;
                         color: $text-white;
+                        padding: 0 4px;
 
                         &:visited {
                             color: $text-white;
@@ -93,10 +95,42 @@ $search-width: 150px;
                 }
             }
 
-            .country-profile:hover {
-                color: $text-yellow;
-                cursor: pointer;
-                transition: $transition-duration;
+            .country-profile {
+                position: relative;
+
+                &:hover span, &:hover i {
+                    color: $text-yellow;
+                    cursor: pointer;
+                    transition: $transition-duration;
+                }
+
+                .country-profile-list {
+                    position: absolute;
+                    box-sizing: border-box;
+                    width: 120px;
+                    border: none;
+                    background-color: $primary-color;
+                    height: 0;
+                    transition: height ease $transition-duration;
+                    overflow: hidden;
+
+                    li {
+                        padding: 0 4px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: $text-red;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .country-profile-list {
+                        height: 45px;
+                        border: 1px solid white;
+                    }  
+                }
             }
         }
     }
