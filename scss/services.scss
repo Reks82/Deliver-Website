@@ -106,9 +106,11 @@
                 }
 
                 .input-location {
+                    position: relative;
                     margin-top: 35px;
 
                     select {
+                        box-sizing: border-box;
                         width: 210px;
                         height: $button-height;
                         padding: 0 18px;
@@ -120,6 +122,26 @@
                         color: $text-white;
                         text-transform: capitalize;
                         appearance: none;
+                        cursor: pointer;
+                    }
+
+                    option {
+                        text-transform: capitalize;
+                    }
+
+                    &:before {
+                        content: "\f107";
+                        font-family: "FontAwesome";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: $button-height;
+                        height: $button-height;
+                        line-height: $button-height;
+                        background-color: $secondary-color;
+                        color: $text-red;
+                        text-align: center;
+                        pointer-events: none;
                     }
                 }
 

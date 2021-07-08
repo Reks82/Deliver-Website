@@ -460,9 +460,11 @@ body::before {
   margin-top: 26px;
 }
 .services .wrapper .container .form-location .input-location {
+  position: relative;
   margin-top: 35px;
 }
 .services .wrapper .container .form-location .input-location select {
+  box-sizing: border-box;
   width: 210px;
   height: 50px;
   padding: 0 18px;
@@ -474,6 +476,24 @@ body::before {
   color: #fff;
   text-transform: capitalize;
   appearance: none;
+  cursor: pointer;
+}
+.services .wrapper .container .form-location .input-location option {
+  text-transform: capitalize;
+}
+.services .wrapper .container .form-location .input-location:before {
+  content: "";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #ffcc00;
+  color: #ba0000;
+  text-align: center;
+  pointer-events: none;
 }
 .services .wrapper .container .form-location .button-explore {
   width: 150px;
