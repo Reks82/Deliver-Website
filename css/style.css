@@ -54,6 +54,10 @@ table {
   border-spacing: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -123,7 +127,6 @@ body::before {
 }
 .header-menu .wrapper .choose-language .language-list {
   position: absolute;
-  box-sizing: border-box;
   width: 60px;
   height: 0;
   overflow: hidden;
@@ -179,7 +182,6 @@ body::before {
 }
 .header-menu .wrapper .header-contacts .country-profile .country-profile-list {
   position: absolute;
-  box-sizing: border-box;
   width: 120px;
   border: none;
   background-color: #ba0000;
@@ -230,7 +232,6 @@ body::before {
   text-transform: uppercase;
 }
 .main-menu .wrapper nav ul li {
-  box-sizing: border-box;
   height: 100%;
   padding: 0 12px;
   margin: 0 11px;
@@ -249,10 +250,8 @@ body::before {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-sizing: border-box;
 }
 .main-menu .wrapper .search .container {
-  box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -282,11 +281,16 @@ body::before {
   width: 0px;
   transition: 0.3s;
 }
+.main-menu .wrapper .search .container input::-webkit-input-placeholder {
+  color: #c2c2c2;
+}
+.main-menu .wrapper .search .container input::-ms-input-placeholder {
+  color: #c2c2c2;
+}
 .main-menu .wrapper .search .container input::placeholder {
-  color: #e4e4e4;
+  color: #c2c2c2;
 }
 .main-menu .wrapper .search .container button {
-  box-sizing: border-box;
   background-color: #ba0000;
   min-width: 50px;
   width: 50px;
@@ -440,7 +444,6 @@ body::before {
   color: #ba0000;
 }
 .services .wrapper .container .form-location {
-  box-sizing: border-box;
   width: 270px;
   height: 339px;
   background-color: #ba0000;
@@ -471,7 +474,6 @@ body::before {
   margin-top: 35px;
 }
 .services .wrapper .container .form-location .input-location select {
-  box-sizing: border-box;
   width: 210px;
   height: 50px;
   padding: 0 18px;
@@ -750,7 +752,6 @@ body::before {
   left: 0;
   width: 430px;
   height: 495px;
-  box-sizing: border-box;
   border: 18px solid #ffcc00;
   z-index: -1;
 }
@@ -825,7 +826,6 @@ body::before {
   align-items: center;
 }
 .clients ul li {
-  box-sizing: border-box;
   width: 270px;
   height: 128px;
   background-color: #f9f9f9;
@@ -848,7 +848,6 @@ body::before {
 
 footer {
   height: 311px;
-  box-sizing: border-box;
   padding-top: 58px;
   background: url("../img/footer-background-left.png"), url("../img/footer-background-right.png"), linear-gradient(90deg, #ba0000, #ba0000 10%, transparent 10%, transparent 90%, #ffcc00 90%, #ffcc00);
   background-repeat: no-repeat;

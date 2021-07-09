@@ -76,7 +76,6 @@
             }
 
             .form-location {
-                box-sizing: border-box;
                 width: 270px;
                 height: 339px;
                 background-color: $primary-color;
@@ -110,7 +109,6 @@
                     margin-top: 35px;
 
                     select {
-                        box-sizing: border-box;
                         width: 210px;
                         height: $button-height;
                         padding: 0 18px;
