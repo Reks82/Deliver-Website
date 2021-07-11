@@ -114,6 +114,7 @@
                         padding: 0 18px;
                         background-color: $dark-red-color;
                         border: none;
+                        outline: none;
                         line-height: $button-height;
                         font-size: 16px;
                         font-weight: 600;
@@ -136,7 +137,7 @@
                         font-family: "FontAwesome";
                         position: absolute;
                         top: 0;
-                        right: 0;
+                        right: 2px;
                         width: $button-height;
                         height: $button-height;
                         line-height: $button-height;

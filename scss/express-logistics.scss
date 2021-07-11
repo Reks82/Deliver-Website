@@ -112,13 +112,16 @@
                     }
 
                     .dropdown-list {
+                        box-sizing: content-box;
                         height: 0px;
-                        overflow-y: hidden;
+                        overflow: hidden;
                         background-color: $dark-red-color;
                         border: none;
                         color: $text-white;
                         padding: 0;
-                        transition: height $transition-duration ease;
+                        transition-property: height;
+                        transition-timing-function: ease;
+                        transition-duration: $transition-duration;
                         visibility: hidden;
 
                         h3 {
@@ -128,6 +131,9 @@
                         }
 
                         ul {
+                            display: flex;
+                            flex-direction: column;
+
                             li {
                                 margin: 10px 5px 0px 5px;
                                 padding-left: 20px;

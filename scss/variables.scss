@@ -5,6 +5,7 @@
 $primary-color: #ba0000;
 $primary-color-transparent: rgba(186, 0, 0, 0.4);
 $secondary-color: #ffcc00;
+$secondary-color-darker: #ffae00;
 $secondary-color-transparent: rgba(255, 204, 0, .4);
 $dark-red-color: #9d0000;
 $back-overlay-color: rgba(0, 0, 0, .7);
@@ -30,3 +31,7 @@ $transition-duration: .3s;
 $header-menu-height: 50px;
 $main-menu-height-desktop: 120px;
 $search-width: 150px;
+
+@media screen and (max-width: 1200px) {
+    $search-width: 120px;
+}
