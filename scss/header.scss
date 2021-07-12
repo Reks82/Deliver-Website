@@ -1,6 +1,5 @@
 // header-menu
 //--------------------------------------------------------------
-
 .header-menu {
     background-color: $primary-color;
     height: $header-menu-height;
@@ -228,6 +227,7 @@
                 }
 
                 a {
+                    color: $text-red;
                     text-decoration: none;
 
                     &:visited {
@@ -533,6 +533,8 @@
         background-size: cover;
 
         .wrapper {
+            max-width: 800px;
+
             h1 {
                 padding-top: 170px;
                 width: 350px;
@@ -563,7 +565,7 @@
             align-items: center;
 
             h1 {
-                padding-top: 70px;
+                padding-top: 50px;
                 width: 325px;
                 font-size: 40px;
                 text-align: center;

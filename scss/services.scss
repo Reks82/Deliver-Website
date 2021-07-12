@@ -1,3 +1,5 @@
+// Services section
+// ---------------------------------------------------------------------------
 .services {
     .wrapper {
         position: relative;
@@ -24,11 +26,13 @@
             color: $text-red;
         }
 
+        // Cards container
         .container {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
 
+            // Card
             .card {
                 width: 270px;
 
@@ -75,6 +79,7 @@
                 }
             }
 
+            // Location form
             .form-location {
                 width: 270px;
                 height: 339px;
@@ -170,6 +175,168 @@
                         color: $text-red;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .services {
+        .wrapper {
+            .container {
+                justify-content: space-around;
+                .card {
+                    width: 230px;
+
+                    img {
+                        height: auto;
+                    }
+
+                    h3 {
+                        padding-top: 20px;
+                        padding-bottom: 10px;
+                        font-size: 18px;
+                    }
+                }
+
+                .form-location {
+                    width: 230px;
+
+                    h3 {
+                        padding-bottom: 10px;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        margin-top: 20px;
+                    }
+    
+                    .input-location {
+                        margin-top: 35px;
+    
+                        select {
+                            width: 172px;
+                            padding: 0 18px;
+                        }
+                    }
+    
+                    .button-explore {
+                        width: 150px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .services {
+        .wrapper {
+            height: auto;
+            padding-bottom: 80px;
+
+            h2 {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+            }
+
+            p.background-text {
+                top: 5px;
+                width: 100%;
+                font-size: 150px;
+                text-align: center;
+            }
+
+            .container {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .card {
+                    width: 270px;
+                    margin: 10px;
+
+                    img {
+                        height: auto;
+                    }
+
+                    h3 {
+                        padding-top: 24px;
+                        padding-bottom: 12px;
+                    }
+                }
+
+                .form-location {
+                    width: 270px;
+                    margin: 10px;
+
+                    h3 {
+                        padding-bottom: 18px;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        margin-top: 26px;
+                    }
+    
+                    .input-location {
+                        margin-top: 35px;
+    
+                        select {
+                            width: 210px;
+                            padding: 0 18px;
+                        }
+                    }
+    
+                    .button-explore {
+                        width: 150px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .services {
+        .wrapper {
+            h2 {
+                font-size: 36px;
+            }
+
+            p.background-text {
+                top: 20px;
+                font-size: 100px;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .services {
+        .wrapper {
+            .container {
+                .card {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services {
+        .wrapper {
+            p.background-text {
+                top: 40px;
+                font-size: 60px;
             }
         }
     }
