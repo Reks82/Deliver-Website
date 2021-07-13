@@ -9,9 +9,11 @@ $secondary-color-darker: #ffae00;
 $secondary-color-transparent: rgba(255, 204, 0, .4);
 $dark-red-color: #9d0000;
 $back-overlay-color: rgba(0, 0, 0, .7);
-$black-shadow-transparent: rgba(0, 0, 0, .4);
+$black-shadow-transparent: rgba(0, 0, 0, .2);
 $dark-white-background-color: #f9f9f9;
 $light-pink-color: #eedbdb;
+$light-grey-darker: rgb(226, 226, 226);
+$light-grey-lighter: rgb(240, 240, 240);
 
 // text colors
 $text-white: #fff;
@@ -35,3 +37,9 @@ $search-width: 150px;
 @media screen and (max-width: 1200px) {
     $search-width: 120px;
 }
+
+// about slider
+$slider-item-width: 370px;
+$slider-item-gap: 30px;
+$slider-item-height: 406px;
+$slider-line-height: $slider-item-height + 20px;

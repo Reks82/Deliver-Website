@@ -198,3 +198,92 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .express-logistics {
+        .wrapper {
+            .selection-block {
+                width: 500px;
+
+                .dropdown-links {
+                    .dropdown-item {
+                        width: 420px;
+
+                        .dropdown-list {
+                            h3 {
+                                margin-bottom: 5px;
+                                font-size: 14px;
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .express-logistics {
+        margin-bottom: 80px;
+
+        .wrapper {
+            padding: 0;
+
+            .selection-block {
+                width: 100%;
+
+                .dropdown-links {
+                    .dropdown-item {
+                        width: 100%;
+
+                        .dropdown-list {
+                            h3 {
+                                margin-bottom: 5px;
+                                font-size: 14px;
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .styled-image {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .express-logistics {
+        margin-bottom: 80px;
+
+        .wrapper {
+            padding: 0;
+
+            .selection-block {
+                width: 100%;
+                height: 474px;
+
+                .dropdown-links {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

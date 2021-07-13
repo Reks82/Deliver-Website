@@ -51,3 +51,44 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .features {
+        .wrapper {
+            article {
+                padding: 10px;
+            }
+
+            .learn-more-button {
+                margin-top: 40px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .features {
+        .wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .features {
+        .wrapper {
+            article {
+                h2 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -264,6 +264,15 @@
                     h3 {
                         padding-top: 24px;
                         padding-bottom: 12px;
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    a {
+                        font-size: 15px;
                     }
                 }
 
@@ -314,15 +323,7 @@
             .container {
                 max-width: 800px;
                 margin: 0 auto;
-            }
-        }
-    }
-}
 
-@media screen and (max-width: 800px) {
-    .services {
-        .wrapper {
-            .container {
                 .card {
                     margin-bottom: 40px;
                 }

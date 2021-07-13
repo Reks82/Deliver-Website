@@ -1,7 +1,7 @@
 .clients {
     padding: 70px 0;
 
-    ul {
+    .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,6 +28,29 @@
                     width: 88%;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .clients {
+        .wrapper {
+            padding: 0;
+
+            li {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .clients {
+        padding: 40px 0;
+        
+        .wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
