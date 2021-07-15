@@ -160,6 +160,34 @@
     .header-menu {
         font-size: 11px;
         font-weight: 500;
+
+        .wrapper {
+            .choose-language {
+                .language-list {
+                    width: 52px;
+                }
+
+                &:hover {     
+                    .language-list {
+                        height: 36px;
+                    }
+                }
+            }
+
+            .header-contacts {
+                .country-profile {
+                    .country-profile-list {
+                        width: 98px;
+                    }
+
+                    &:hover {     
+                        .country-profile-list {
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
