@@ -82,11 +82,18 @@
                         list-style-type: none;                  
     
                         li {
+                            position: relative;
                             margin-top: 11px;
                             padding-left: 20px;
-                            background-image: url("../img/arrow-right.png");
-                            background-position: 0 0;
-                            background-repeat: no-repeat;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: 4px;
+                                left: 0;
+                                border: 7px solid transparent;
+                                border-left-color: $secondary-color;
+                            }
                         }
                     }
                 }

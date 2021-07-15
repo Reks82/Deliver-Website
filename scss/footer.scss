@@ -29,6 +29,7 @@ footer {
                 margin-top: 35px;
 
                 li {
+                    position: relative;
                     margin-bottom: 10px;
                     padding-left: 10px;
                     font-size: 14px;
@@ -36,6 +37,15 @@ footer {
                     text-transform: uppercase;
                     letter-spacing: 0.6px;
                     word-spacing: 1px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 2px;
+                        left: 0;
+                        border: 5px solid transparent;
+                        border-left-color: $primary-color;
+                    }
 
                     a {
                         color: $text-grey;
