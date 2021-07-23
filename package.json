@@ -1,0 +1,43 @@
+{
+  "name": "deliver-website",
+  "version": "1.0.0",
+  "description": "pure html\\css page for summary",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx postcss css/style.css --use autoprefixer -o css/style2.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reks82/Deliver-Website.git"
+  },
+  "browserslist": [
+    "> 5%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ],
+  "keywords": [
+    "html",
+    "css",
+    "sass"
+  ],
+  "author": "Ivan Glemyaznyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reks82/Deliver-Website/issues"
+  },
+  "homepage": "https://github.com/Reks82/Deliver-Website#readme"
+}

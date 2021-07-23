@@ -342,10 +342,10 @@ body {
   width: 0px;
   transition: 0.3s;
 }
-.main-menu .wrapper .search .container input::-webkit-input-placeholder {
+.main-menu .wrapper .search .container input::-moz-placeholder {
   color: #c2c2c2;
 }
-.main-menu .wrapper .search .container input::-ms-input-placeholder {
+.main-menu .wrapper .search .container input:-ms-input-placeholder {
   color: #c2c2c2;
 }
 .main-menu .wrapper .search .container input::placeholder {
@@ -730,7 +730,9 @@ body {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 .services .wrapper .cards .form-location .input-location select:focus {
@@ -952,7 +954,8 @@ body {
 .about .slider-container .slider-line .slider-item img {
   width: 370px;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about .slider-container .slider-line .slider-item .text-area {
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
@@ -1526,5 +1529,3 @@ footer .wrapper .social-media {
     width: 260px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
