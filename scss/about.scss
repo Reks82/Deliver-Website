@@ -12,6 +12,7 @@
     background-size: cover;
 
     h2 {
+        max-width: 100vw;
         font-size: 50px;
         font-weight: 700;
         color: $text-white;
@@ -42,8 +43,9 @@
     .slider-container {
         position: absolute;
         top: 500px;
-        left: auto;
-        right: auto;
+        left: 0;
+        right: 0;
+        margin: auto;
         width: $slider-item-width * 3 + $slider-item-gap * 3;
         overflow: hidden;
 
@@ -54,6 +56,7 @@
             align-items: flex-start;
 
             .slider-item {
+                min-width: $slider-item-width;
                 width: $slider-item-width;
                 height: $slider-item-height;
                 margin: 0 $slider-item-gap * 0.5;
@@ -108,6 +111,8 @@
 
         h2 {
             font-size: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         .slider-container {
@@ -182,6 +187,7 @@
 
             .slider-line {
                 .slider-item {
+                    min-width: 90vw;
                     width: 90vw;
 
                     img {

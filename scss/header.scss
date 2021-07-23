@@ -1,5 +1,5 @@
-// header-menu
-//--------------------------------------------------------------
+/* header-menu */
+/*--------------------------------------------------------------*/
 .header-menu {
     background-color: $primary-color;
     height: $header-menu-height;
@@ -75,8 +75,15 @@
             justify-content: space-around;
             align-items: center;
 
-            .contact-center {
+            .contact-center-button {
                 margin-right: 30px;
+                padding: 0;
+                background: none;
+                border: none;
+                font-size: inherit;
+                font-weight: inherit;
+                letter-spacing: 1px;
+                color: $text-white;
                 transition: $transition-duration;
 
                 i {
@@ -92,10 +99,20 @@
             .country-profile {
                 position: relative;
 
-                &:hover span, &:hover i {
-                    color: $text-yellow;
+                .country-profile-button {
+                    padding: 0;
+                    background: none;
+                    border: none;
+                    font-size: inherit;
+                    font-weight: inherit;
+                    letter-spacing: 1px;
+                    color: $text-white;
                     cursor: pointer;
                     transition: $transition-duration;
+
+                    &:hover {
+                        color: $text-yellow;
+                    }
                 }
 
                 .country-profile-list {
@@ -148,7 +165,7 @@
 
         .wrapper {
             .header-contacts { 
-                .contact-center {
+                .contact-center-button {
                     margin-right: 10px;
                 }
             }

@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "npx postcss css/style.css --use autoprefixer -o css/style2.css"
+    "build": "npx postcss css/style.css --use autoprefixer -o css/style.css"
   },
   "repository": {
     "type": "git",

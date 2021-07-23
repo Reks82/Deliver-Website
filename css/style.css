@@ -109,6 +109,8 @@ body {
   user-select: none;
 }
 
+/* header-menu */
+/*--------------------------------------------------------------*/
 .header-menu {
   background-color: #ba0000;
   height: 50px;
@@ -171,24 +173,40 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.header-menu .wrapper .header-contacts .contact-center {
+.header-menu .wrapper .header-contacts .contact-center-button {
   margin-right: 30px;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: 1px;
+  color: #fff;
   transition: 0.3s;
 }
-.header-menu .wrapper .header-contacts .contact-center i {
+.header-menu .wrapper .header-contacts .contact-center-button i {
   margin-right: 3px;
 }
-.header-menu .wrapper .header-contacts .contact-center:hover {
+.header-menu .wrapper .header-contacts .contact-center-button:hover {
   color: #ffcc00;
   cursor: pointer;
 }
 .header-menu .wrapper .header-contacts .country-profile {
   position: relative;
 }
-.header-menu .wrapper .header-contacts .country-profile:hover span, .header-menu .wrapper .header-contacts .country-profile:hover i {
-  color: #ffcc00;
+.header-menu .wrapper .header-contacts .country-profile .country-profile-button {
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: 1px;
+  color: #fff;
   cursor: pointer;
   transition: 0.3s;
+}
+.header-menu .wrapper .header-contacts .country-profile .country-profile-button:hover {
+  color: #ffcc00;
 }
 .header-menu .wrapper .header-contacts .country-profile .country-profile-list {
   position: absolute;
@@ -222,7 +240,7 @@ body {
     font-size: 13px;
     font-weight: 300;
   }
-  .header-menu .wrapper .header-contacts .contact-center {
+  .header-menu .wrapper .header-contacts .contact-center-button {
     margin-right: 10px;
   }
 }
@@ -342,10 +360,10 @@ body {
   width: 0px;
   transition: 0.3s;
 }
-.main-menu .wrapper .search .container input::-moz-placeholder {
+.main-menu .wrapper .search .container input::-webkit-input-placeholder {
   color: #c2c2c2;
 }
-.main-menu .wrapper .search .container input:-ms-input-placeholder {
+.main-menu .wrapper .search .container input::-ms-input-placeholder {
   color: #c2c2c2;
 }
 .main-menu .wrapper .search .container input::placeholder {
@@ -730,9 +748,7 @@ body {
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 .services .wrapper .cards .form-location .input-location select:focus {
@@ -909,6 +925,7 @@ body {
   background-size: cover;
 }
 .about h2 {
+  max-width: 100vw;
   font-size: 50px;
   font-weight: 700;
   color: #fff;
@@ -935,8 +952,9 @@ body {
 .about .slider-container {
   position: absolute;
   top: 500px;
-  left: auto;
-  right: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 1200px;
   overflow: hidden;
 }
@@ -947,6 +965,7 @@ body {
   align-items: flex-start;
 }
 .about .slider-container .slider-line .slider-item {
+  min-width: 370px;
   width: 370px;
   height: 406px;
   margin: 0 15px;
@@ -954,8 +973,7 @@ body {
 .about .slider-container .slider-line .slider-item img {
   width: 370px;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .about .slider-container .slider-line .slider-item .text-area {
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
@@ -993,6 +1011,8 @@ body {
   }
   .about h2 {
     font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .about .slider-container {
     top: 400px;
@@ -1042,6 +1062,7 @@ body {
     width: 100vw;
   }
   .about .slider-container .slider-line .slider-item {
+    min-width: 90vw;
     width: 90vw;
   }
   .about .slider-container .slider-line .slider-item img {
@@ -1529,3 +1550,5 @@ footer .wrapper .social-media {
     width: 260px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
